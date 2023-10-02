@@ -17,4 +17,13 @@ public class student {
     private ArrayList<String> Hobby;
     private Address address;
     private Gender gender;
+
+    public student(String name, String lastname, String email, ArrayList<String> hobby, Address address, Gender gender) {
+        Name = name;
+        Lastname = lastname;
+        Email = email;
+        Hobby = hobby;
+        this.address = address;
+        this.gender = gender;
+    }
 }

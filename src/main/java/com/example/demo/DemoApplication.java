@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.model.student;
 import com.example.demo.repositories.studentrepositories;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -13,9 +14,11 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 	@Bean
-	CommandLineRunner runner(studentrepositories reposi)
+	CommandLineRunner runner(studentrepositories repository)
 	{
-		
+		return args -> {
+			student student = new student("JJ","DDD","DDD","SSSS","SSSS");
+		};
 	};
 
 }
