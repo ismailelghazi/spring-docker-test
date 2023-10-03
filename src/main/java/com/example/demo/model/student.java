@@ -12,22 +12,19 @@ import java.util.ArrayList;
 @Document
 public class student {
     @Id
-    private String Id;
-    private String Name;
-    private String Lastname;
+    private String id;
+    private String name;
+    private String lastName;
     @Indexed(unique = true)
     private String email;
     private Address address;
     private Gender gender;
 
-    public student(String name, String lastname, String Email, Address address, Gender gender) {
-        Name = name;
-        Lastname = lastname;
-        email = Email;
+    public student(String name, String lastName, String email, Address address, Gender gender) {
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
         this.address = address;
         this.gender = gender;
     }
-
-
-
 }
